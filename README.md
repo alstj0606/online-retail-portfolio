@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-=======
-# online-retail-portfolio
-E-commerce sales, retention, and channel performance analysis portfolio project
 
->>>>>>> dca7fd3a30f4055b877590086003d882ff125603
 # Online Retail Portfolio Project
 
 ## 1. Project Overview
@@ -103,4 +98,4 @@ E-commerce sales, retention, and channel performance analysis portfolio project
 이 프로젝트는 하나의 이커머스 거래 데이터를 활용해 매출, 고객, 채널 관점의 분석을 통합적으로 수행한 포트폴리오입니다.
 =======
 이 프로젝트는 하나의 이커머스 거래 데이터를 활용해 매출, 고객, 채널 관점의 분석을 통합적으로 수행한 포트폴리오입니다.
->>>>>>> dca7fd3a30f4055b877590086003d882ff125603
+
