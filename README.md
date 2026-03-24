@@ -94,6 +94,8 @@
 - 휴면 고객은 최근 90일 미구매로 정의했습니다.
 
 <img width="599" height="376" alt="image" src="https://github.com/user-attachments/assets/7b5e1edf-1fe7-4a02-a751-4726a7dab69d" />
+<img width="604" height="296" alt="image" src="https://github.com/user-attachments/assets/d51fb896-017b-43fe-bf32-7d9c8c651eb8" />
+<img width="603" height="299" alt="image" src="https://github.com/user-attachments/assets/d62d52a2-8f99-46c7-8450-32c93284406c" />
 
 
 ## 9. Conclusion
