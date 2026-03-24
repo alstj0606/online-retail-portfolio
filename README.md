@@ -93,6 +93,9 @@
 - 상품 카테고리 정보가 별도로 존재하지 않아 상품 설명 중심으로 분석했습니다.
 - 휴면 고객은 최근 90일 미구매로 정의했습니다.
 
+<img width="599" height="376" alt="image" src="https://github.com/user-attachments/assets/7b5e1edf-1fe7-4a02-a751-4726a7dab69d" />
+
+
 ## 9. Conclusion
 <<<<<<< HEAD
 이 프로젝트는 하나의 이커머스 거래 데이터를 활용해 매출, 고객, 채널 관점의 분석을 통합적으로 수행한 포트폴리오입니다.
