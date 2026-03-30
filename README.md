@@ -1,3 +1,89 @@
+# 🛒 Online Retail Data Analysis Portfolio
+
+<p align="right">
+  <a href="#-english-version">🇺🇸 English</a> | 
+  <a href="#-한국어-버전">🇰🇷 한국어</a>
+</p>
+
+---
+
+## 🇺🇸 English Version
+
+This repository contains a comprehensive data analysis project using UK online retail transaction data to evaluate sales structures, customer retention, and marketing channel performance.
+
+---
+
+## 1. Project Overview
+This project analyzes the **Online Retail II** dataset to derive actionable business insights across three core domains:
+1.  **Revenue Analysis:** Identifying growth drivers and sales trends.
+2.  **Customer Retention:** Analyzing repurchase patterns and identifying dormant segments.
+3.  **Channel Attribution:** Evaluating marketing efficiency through hypothesis-based modeling.
+
+## 2. Project Titles
+* **Project 1:** E-commerce Revenue Structure Analysis & Growth Point Identification
+* **Project 2:** Customer Repurchase Pattern Analysis & Dormant Group Segmentation
+* **Project 3:** Marketing Efficiency Strategy via Hypothesis-based Channel Performance
+
+## 3. Dataset & Tech Stack
+### Dataset: Online Retail II
+* **Format:** CSV
+* **Key Features:** `Invoice`, `StockCode`, `Description`, `Quantity`, `InvoiceDate`, `Price`, `Customer ID`, `Country`
+
+### Tech Stack
+* **Language:** Python 3.x
+* **Libraries:** Pandas, Matplotlib, Seaborn
+* **IDE:** VS Code
+
+---
+
+## 4. Data Preprocessing
+To ensure data integrity, the following steps were performed:
+* **Cleaning:** Removed whitespace from column names and handled missing `Customer ID` values.
+* **Transformation:** Converted `InvoiceDate` to datetime and generated `YearMonth` for time-series analysis.
+* **Filtering:** Included only valid transactions ($Quantity > 0$ and $Price > 0$).
+* **Feature Engineering:** Calculated `Sales` ($Quantity \times Price$).
+
+---
+
+## 5. Analysis Details
+
+### 5-1. Sales Analysis
+* Monthly revenue trends and seasonality.
+* Top 10 countries and products by revenue contribution.
+* **Outputs:** `monthly_sales.png`, `country_sales.png`, `product_sales.png`
+
+### 5-2. Repurchase & Dormant Customer Analysis
+* **Recency/Frequency:** Aggregated order counts and intervals per customer.
+* **Dormancy:** Defined "Dormant Customers" as those with no purchases within the last 90 days.
+* **Outputs:** `purchase_frequency.png`, `repurchase_distribution.png`, `dormant_distribution.png`
+
+### 5-3. Channel Performance Analysis
+*Since the dataset lacks original source tags, synthetic variables were assigned for framework implementation:*
+* **Acquisition (First Order):** Paid Search, Social, Direct.
+* **Retention (Repeat Order):** Email, Direct, Social.
+* **Outputs:** `channel_orders.png`, `channel_sales.png`, `channel_aov.png`
+
+---
+
+## 6. Key Metrics
+* **Sales:** $Quantity \times Price$
+* **Recency:** Reference Date - Last Purchase Date
+* **Frequency:** Total order count per customer
+* **Monetary:** Total spending per customer
+* **AOV (Average Order Value):** Total Revenue / Total Orders
+
+---
+
+## 7. Limitations & Future Work
+* **Channel Data:** Performance metrics are based on assumed variables due to lack of raw attribution data.
+* **Categorization:** Analysis relied on product descriptions as explicit category metadata was unavailable.
+* **Dormancy Threshold:** Used a fixed 90-day window which may vary by business industry.
+
+
+<img width="599" height="376" alt="image" src="https://github.com/user-attachments/assets/7b5e1edf-1fe7-4a02-a751-4726a7dab69d" />
+
+
+## 🇰🇷 한국어 버전
 
 # Online Retail Portfolio Project
 
@@ -95,79 +181,5 @@
 
 <img width="599" height="376" alt="image" src="https://github.com/user-attachments/assets/7b5e1edf-1fe7-4a02-a751-4726a7dab69d" />
 
-# 🛒 Online Retail Data Analysis Portfolio
-
-This repository contains a comprehensive data analysis project using UK online retail transaction data to evaluate sales structures, customer retention, and marketing channel performance.
-
----
-
-## 1. Project Overview
-This project analyzes the **Online Retail II** dataset to derive actionable business insights across three core domains:
-1.  **Revenue Analysis:** Identifying growth drivers and sales trends.
-2.  **Customer Retention:** Analyzing repurchase patterns and identifying dormant segments.
-3.  **Channel Attribution:** Evaluating marketing efficiency through hypothesis-based modeling.
-
-## 2. Project Titles
-* **Project 1:** E-commerce Revenue Structure Analysis & Growth Point Identification
-* **Project 2:** Customer Repurchase Pattern Analysis & Dormant Group Segmentation
-* **Project 3:** Marketing Efficiency Strategy via Hypothesis-based Channel Performance
-
-## 3. Dataset & Tech Stack
-### Dataset: Online Retail II
-* **Format:** CSV
-* **Key Features:** `Invoice`, `StockCode`, `Description`, `Quantity`, `InvoiceDate`, `Price`, `Customer ID`, `Country`
-
-### Tech Stack
-* **Language:** Python 3.x
-* **Libraries:** Pandas, Matplotlib, Seaborn
-* **IDE:** VS Code
-
----
-
-## 4. Data Preprocessing
-To ensure data integrity, the following steps were performed:
-* **Cleaning:** Removed whitespace from column names and handled missing `Customer ID` values.
-* **Transformation:** Converted `InvoiceDate` to datetime and generated `YearMonth` for time-series analysis.
-* **Filtering:** Included only valid transactions ($Quantity > 0$ and $Price > 0$).
-* **Feature Engineering:** Calculated `Sales` ($Quantity \times Price$).
-
----
-
-## 5. Analysis Details
-
-### 5-1. Sales Analysis
-* Monthly revenue trends and seasonality.
-* Top 10 countries and products by revenue contribution.
-* **Outputs:** `monthly_sales.png`, `country_sales.png`, `product_sales.png`
-
-### 5-2. Repurchase & Dormant Customer Analysis
-* **Recency/Frequency:** Aggregated order counts and intervals per customer.
-* **Dormancy:** Defined "Dormant Customers" as those with no purchases within the last 90 days.
-* **Outputs:** `purchase_frequency.png`, `repurchase_distribution.png`, `dormant_distribution.png`
-
-### 5-3. Channel Performance Analysis
-*Since the dataset lacks original source tags, synthetic variables were assigned for framework implementation:*
-* **Acquisition (First Order):** Paid Search, Social, Direct.
-* **Retention (Repeat Order):** Email, Direct, Social.
-* **Outputs:** `channel_orders.png`, `channel_sales.png`, `channel_aov.png`
-
----
-
-## 6. Key Metrics
-* **Sales:** $Quantity \times Price$
-* **Recency:** Reference Date - Last Purchase Date
-* **Frequency:** Total order count per customer
-* **Monetary:** Total spending per customer
-* **AOV (Average Order Value):** Total Revenue / Total Orders
-
----
-
-## 7. Limitations & Future Work
-* **Channel Data:** Performance metrics are based on assumed variables due to lack of raw attribution data.
-* **Categorization:** Analysis relied on product descriptions as explicit category metadata was unavailable.
-* **Dormancy Threshold:** Used a fixed 90-day window which may vary by business industry.
-
-
-<img width="599" height="376" alt="image" src="https://github.com/user-attachments/assets/7b5e1edf-1fe7-4a02-a751-4726a7dab69d" />
 
 
